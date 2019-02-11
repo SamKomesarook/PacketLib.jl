@@ -1,0 +1,5 @@
+name = "PacketLib"
+uuid = "d6d769dc-09da-11e9-06ac-afbcbdd1630b"
+version = "0.1.0"
+
+[deps]
