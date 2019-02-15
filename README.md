@@ -12,7 +12,7 @@ ___
 
 _Version 1_
 
-- [ ] ethernet packet crafting
+- [x] ethernet packet crafting
 - [ ] ethernet packet sending
 - [ ] linux support (libpcap?)
 - [ ] darwin support (bpf?)
