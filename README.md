@@ -14,9 +14,7 @@ _Version 1_
 
 - [x] ethernet packet crafting
 - [ ] ethernet packet sending
-- [ ] linux support (libpcap?)
 - [ ] darwin support (bpf?)
-- [ ] windows support (npcap?)
 
 _Version 2_
 
@@ -41,3 +39,7 @@ _Version 4_
 _Version 5_
 
 - [ ] packet (protocol) creation framework
+
+_Version 6_
+- [ ] windows support (npcap?)
+- [ ] linux support (libpcap?)
