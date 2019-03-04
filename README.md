@@ -2,7 +2,7 @@
 
 Julia library for crafting and capturing packets, with a focus on flexibility and expressiveness. Work with a wide range of protocols, or use it to develop a new one.
 
-**This library is still under development, and should not be used until the first official release.**
+**This library is still under development, and should not be used in production until verified on all platforms under a range of conditions. (~V.6) Use on platforms other than Darwin has not been conducted. **
 
 Any contributions are welcome, but those necessary for the next release are preferable.
 
@@ -13,8 +13,8 @@ ___
 _Version 1_
 
 - [x] ethernet packet crafting
-- [ ] ethernet packet sending
-- [ ] darwin support (bpf?)
+- [x] ethernet packet sending
+- [x] darwin support (bpf)
 
 _Version 2_
 

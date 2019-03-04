@@ -1,4 +1,5 @@
 include("lib.jl")
+
 "The parameters to an Ethernet packet are composites of multiple values, to allow developers a lot of flexibility when crafting a packet."
 EtherAddr = Union{UInt8, Array{UInt8}, AbstractString, Int64, Array{Int64}, Base.CodeUnits{UInt8,String}}
 EtherType = Union{EtherAddr, UInt16}
@@ -106,4 +107,18 @@ function etheraddr_raw(e::EtherAddr)
         end
         return [Int(i) for i in e]
     end
+end
+
+"Send the packet."
+function send(p::Packet, iface::String="en0", loop::Bool=false, count::Int=1, delay::Float64=0.0)
+    if isa(p, Ether)
+        l2 = 1
+    else
+        l2 = 0
+    end
+    p = raw(p)
+    if loop
+        count = 0
+    end
+    return ccall((:send_l, "src/packetlib.so"), Int64, (Ptr{UInt8}, Int64, Int64, Int64, Float64, Cstring, ), convert(Array{UInt8,1}, p), length(p), l2, count, delay, iface)
 end
