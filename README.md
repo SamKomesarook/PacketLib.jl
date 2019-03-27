@@ -19,7 +19,6 @@ _Version 1_
 _Version 2_
 
 - [ ] ethernet packet capturing
-- [ ] 802.3 (capture/crafting)
 
 _Version 3_
 
