@@ -19,10 +19,11 @@ _Version 1_
 _Version 2_
 
 - [ ] ethernet packet capturing
+- [ ] IPv4 (capture/crafting)
 
 _Version 3_
 
-- [ ] IPv4 (capture/crafting)
+- [ ] ARP (capture/crafting)
 - [ ] IPv6 (capture/crafting)
 
 _Version 4_
@@ -30,15 +31,11 @@ _Version 4_
 - [ ] UDP (capture/crafting)
 - [ ] TCP (capture/crafting)
 
-_Version 4_
-
-- [ ] ARP (capture/crafting)
-- [ ] TCP (capture/crafting)
-
 _Version 5_
 
 - [ ] packet (protocol) creation framework
 
 _Version 6_
+
 - [ ] windows support (npcap?)
 - [ ] linux support (libpcap?)
